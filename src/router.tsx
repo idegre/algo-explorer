@@ -5,13 +5,15 @@ import {
 		BrowserRouter
 } from "react-router-dom";
 import { Home } from './components/home';
+import { Blocks } from './containers/blocks';
 
 export const Router = () => <BrowserRouter>
 	<Switch>
     <Route exact path="/">
-        <Home />
+      <Home />
     </Route>
 		<Route path="/blocks">
+			<Blocks />
     </Route>
 		<Route path="/block/:blockNumber">
     </Route>

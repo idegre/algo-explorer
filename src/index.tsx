@@ -6,6 +6,9 @@ import { Router } from './router';
 import { configureStore } from './store';
 import { Provider } from 'react-redux'
 
+let axiosDefaults = require('axios/lib/defaults');
+axiosDefaults.baseURL = 'https://api.algoexplorer.io/v1';
+
 ReactDOM.render(
   <React.StrictMode>
 		<Provider store={configureStore()}>
