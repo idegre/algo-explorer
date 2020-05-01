@@ -8,8 +8,14 @@ import { Home } from './components/home';
 
 export const Router = () => <BrowserRouter>
 	<Switch>
-    <Route path="/">
+    <Route exact path="/">
         <Home />
+    </Route>
+		<Route path="/blocks">
+    </Route>
+		<Route path="/block/:blockNumber">
+    </Route>
+		<Route path="/transactions">
     </Route>
 	</Switch>
 </BrowserRouter>
