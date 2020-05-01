@@ -9,7 +9,8 @@ export const Blocks = () => {
 	const dispatch = useDispatch()
 	const {isFetching, blocks, error} = useSelector(({lastestBlocks}: RootState) => lastestBlocks)
 	useEffect(() => {
-		dispatch(getLastestBlocks())
+		const refreshInterval = setInterval(() => dispatch(getLastestBlocks()), 3000)
+		return () => clearInterval(refreshInterval)
 	}, [])
 
 	return isFetching && (blocks === null) ? <Spinner /> : !!error ? <div>there was a problem</div> : blocks && <BlocksList blocks={blocks} />

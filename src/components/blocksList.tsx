@@ -14,7 +14,7 @@ export const BlocksList = ({blocks}: OwnProps) => <Table>
 		</tr>
 	</thead>
 	<tbody>
-		{blocks.map(({hash}: IBlock, index: number) => <tr key={hash}>
+		{blocks.map(({ hash }: IBlock, index: number) => <tr key={hash}>
 			<th scope="row">{index}</th>
 			<td>{hash}</td>
 		</tr>)}
