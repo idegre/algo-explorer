@@ -7,6 +7,7 @@ import {
 import { Home } from './components/home';
 import { Blocks } from './containers/blocks';
 import { Transactions } from './containers/transactions';
+import { Block } from './containers/block';
 
 export const Router = () => <BrowserRouter>
 	<Switch>
@@ -17,6 +18,7 @@ export const Router = () => <BrowserRouter>
 			<Blocks />
     </Route>
 		<Route path="/block/:blockNumber">
+			<Block />
     </Route>
 		<Route path="/transactions">
 			<Transactions />
