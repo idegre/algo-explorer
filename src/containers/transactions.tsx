@@ -13,5 +13,5 @@ export const Transactions = () => {
 		return () => clearInterval(refreshInterval)
 	}, [])
 
-	return isFetching && (transactions === null) ? <Spinner /> : !!error ? <div>there was a problem</div> : transactions && <TransactionList transactions={transactions} />
+	return isFetching && (transactions === null) ? <Spinner class="d-flex justify-content-center"/> : !!error ? <div>there was a problem</div> : transactions && <TransactionList transactions={transactions} />
 }

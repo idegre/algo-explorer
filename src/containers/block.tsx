@@ -15,5 +15,5 @@ export const Block = () => {
 			dispatch(getBlock(blockNumber))
 		}
 	}, [])
-	return !!individualBlock?.isFetching ? <Spinner /> : (!!individualBlock?.error || !individualBlock?.data) ? <div>there was a problem</div> : <BlockForm block={individualBlock.data} />
+	return !!individualBlock?.isFetching ? <Spinner class="d-flex justify-content-center"/> : (!!individualBlock?.error || !individualBlock?.data) ? <div>there was a problem</div> : <BlockForm block={individualBlock.data} />
 }

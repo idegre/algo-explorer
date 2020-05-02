@@ -13,5 +13,5 @@ export const Blocks = () => {
 		return () => clearInterval(refreshInterval)
 	}, [])
 
-	return isFetching && (blocks === null) ? <Spinner /> : !!error ? <div>there was a problem</div> : blocks && <BlocksList blocks={blocks} />
+	return isFetching && (blocks === null) ? <Spinner class="d-flex justify-content-center"/> : !!error ? <div>there was a problem</div> : blocks && <BlocksList blocks={blocks} />
 }
