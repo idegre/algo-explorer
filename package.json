@@ -16,7 +16,7 @@
     "@types/reactstrap": "^8.4.2",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
-    "moment": "^2.25.1",
+    "moment": "^2.29.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
